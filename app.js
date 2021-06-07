@@ -4,6 +4,8 @@ const bodyParser = require("body-parser");
 const app = express();
 
 app.use(express.static("public"));
+var mykey = config.MY_KEY;
+var secretkey = config.SECRET_KEY;
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -53,12 +55,7 @@ app.post("/", function (req, res) {
           ">"
       );
 
-      //    console.log(weatherData)
-      //     const object={
-      //         name:"Rishav",
-      //         age:22
-      //     }
-      //    console.log(JSON.stringify(object));
+   
     });
   });
 });
