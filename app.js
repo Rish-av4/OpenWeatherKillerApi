@@ -4,8 +4,8 @@ const bodyParser = require("body-parser");
 const app = express();
 
 app.use(express.static("public"));
-var mykey = config.MY_KEY;
-var secretkey = config.SECRET_KEY;
+// var mykey = config.MY_KEY;
+// var secretkey = config.SECRET_KEY;
 
 
 app.use(bodyParser.urlencoded({ extended: true }));
